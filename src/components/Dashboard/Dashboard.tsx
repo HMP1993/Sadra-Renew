@@ -9,16 +9,10 @@ import List from "@mui/material/List";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
-import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
-import Paper from "@mui/material/Paper";
 import Link from "@mui/material/Link";
 import MenuIcon from "@mui/icons-material/Menu";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import { mainListItems } from "./listItems";
-import Chart from "./Chart";
-import Deposits from "./Deposits";
-import Orders from "./Orders";
 import PersonIcon from "@mui/icons-material/Person";
 import { Avatar } from "@mui/material";
 
@@ -164,7 +158,6 @@ function DashboardContent() {
           }}
         >
           <Toolbar />
-         
         </Box>
       </Box>
     </ThemeProvider>
