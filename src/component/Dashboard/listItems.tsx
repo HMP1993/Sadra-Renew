@@ -2,34 +2,34 @@ import * as React from "react";
 import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import DashboardIcon from "@mui/icons-material/Dashboard";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import PeopleIcon from "@mui/icons-material/People";
-import BarChartIcon from "@mui/icons-material/BarChart";
+import LocalShippingRoundedIcon from '@mui/icons-material/LocalShippingRounded';
+import CategoryRoundedIcon from '@mui/icons-material/CategoryRounded';
+import ReceiptLongRoundedIcon from '@mui/icons-material/ReceiptLongRounded';
 
 export const mainListItems = (
   <div>
     <ListItem button>
       <ListItemIcon>
-        <DashboardIcon />
+        <PeopleIcon />
       </ListItemIcon>
       <ListItemText primary="CUSTOMERS" />
     </ListItem>
     <ListItem button>
       <ListItemIcon>
-        <ShoppingCartIcon />
+      <LocalShippingRoundedIcon />
       </ListItemIcon>
       <ListItemText primary="SUPPLIERS" />
     </ListItem>
     <ListItem button>
       <ListItemIcon>
-        <PeopleIcon />
+        <CategoryRoundedIcon />
       </ListItemIcon>
       <ListItemText primary="PRODUCTS" />
     </ListItem>
     <ListItem button>
       <ListItemIcon>
-        <BarChartIcon />
+        <ReceiptLongRoundedIcon />
       </ListItemIcon>
       <ListItemText primary="ORDERS" />
     </ListItem>
