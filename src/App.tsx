@@ -5,11 +5,8 @@ import Dashboard from "./component/Dashboard/Dashboard";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Dashboard />
-      </header>
-    </div>
+    
+    <Dashboard />
   );
 }
 
