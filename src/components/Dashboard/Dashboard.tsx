@@ -14,8 +14,12 @@ import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import { mainListItems } from "./listItems";
 import PersonIcon from "@mui/icons-material/Person";
 import { Avatar } from "@mui/material";
+import AddCustomer from "../Forms/Add Customer";
+import { blueGrey } from "@mui/material/colors";
 
-const drawerWidth: number = 240;
+
+
+const drawerWidth: number = 230;
 
 interface AppBarProps extends MuiAppBarProps {
   open?: boolean;
@@ -53,6 +57,7 @@ const Drawer = styled(MuiDrawer, {
     boxSizing: "border-box",
     ...(!open && {
       overflowX: "hidden",
+
       transition: theme.transitions.create("width", {
         easing: theme.transitions.easing.sharp,
         duration: theme.transitions.duration.leavingScreen,
@@ -77,7 +82,7 @@ function DashboardContent() {
     <ThemeProvider theme={mdTheme}>
       <Box sx={{ display: "flex" }}>
         <CssBaseline />
-        <AppBar color="transparent" position="absolute" open={open}>
+        <AppBar color="primary" position="absolute" open={open}>
           <Toolbar
             sx={{
               pr: "24px", // keep right padding when drawer closed
@@ -139,6 +144,7 @@ function DashboardContent() {
           }}
         >
           <Toolbar />
+          <AddCustomer/>
         </Box>
       </Box>
     </ThemeProvider>
